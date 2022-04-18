@@ -41,7 +41,7 @@ html {
 
 .content{
   background: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto 2.8rem auto;
 }
 
 a {
@@ -84,6 +84,7 @@ a:hover {
 
 #blog-header {
   background: none;
+  margin: 0 auto 0 auto;
 }
 
 #blog-title {
