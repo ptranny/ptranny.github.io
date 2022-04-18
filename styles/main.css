@@ -1,0 +1,105 @@
+/* Phone 0-599 px */
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 12pt;
+  }
+
+  .content{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Tablet 600-904 dp and 905-1239 px */
+@media screen and (min-width: 600px) and (max-width: 1239px) {
+  html {
+    font-size: 14pt;
+  }
+
+  .content{
+    max-width: 40rem;
+    padding: 2rem;
+  }
+}
+
+/* Laptop and desktop 1240+ px*/
+@media screen and (min-width: 1240px) {
+  html {
+    font-size: 14pt;
+  }
+
+  .content{
+    max-width: 40rem;
+    padding: 2.8rem;
+  }
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(#d9e4f5,#f5e3e6);
+}
+
+.content{
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #5c5c5c;
+}
+
+.post-header {
+  margin-bottom: 1.4rem;
+}
+
+.post-date {
+  font-family: 'Noto Sans';
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.post-title {
+  font-family: 'Noto Sans';
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.post-body {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+#blog-header {
+  background: none;
+}
+
+#blog-title {
+  font-family: 'Noto Sans';
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#blog-description {
+  font-family: 'Noto Serif';
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 2.8rem;
+  text-align: center;
+}
