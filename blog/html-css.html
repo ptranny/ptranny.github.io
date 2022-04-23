@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS display: inline vs inline-block</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400&family=Noto+Sans:wght@400;500;900">     
+  <body>
+    <div id="blog-header">
+      <div id="blog-title">MISSING SEMICOLON</div>
+      <div id="blog-description">Reflections and learning</div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <div class="post-date">23 April 2022</div>
+        <div class="post-title">CSS display: inline vs inline-block</div>
+      </div>
+      <div class="post-body">
+        <p>Imagine you are trying to file away your collection of books. You start with an empty bookcase. For lack of a better plan, you start at the top shelf and start filling it from left to right. When the shelf is full, you move down a shelf and start filling again from left to right. Repeat until there are no more books left. This is the way web browsers display HTML elements by default, in the absence of any styling rules, and it is called <em>normal flow</em>. The HTML elements are the books and the bookcase is whatever HTML container you’re trying to fill. HTML elements that behave in this way, filling up space by positioning themselves next to each other until they run out of room, are called <em>inline</em> elements. Examples of inline elements are: <code>&lt;a&gt; &lt;img&gt; &lt;code&gt; &lt;span&gt;</code></p>
+
+        <p>Some books might contain very little content but they will take up the entire width of the bookshelf, forcing the other books to fill up from the next shelf down. Maybe it’s your special hardcover edition of Fifty Shades of Grey, signed by the author. HTML elements that behave in this way, starting on a new line and taking up the entire width of the container, are called <em>block</em> elements. Examples of block elements are: <code>&lt;div&gt; &lt;li&gt; &lt;h1&gt; &lt;table&gt;</code></p>
+        
+        <p>There is another difference between inline and block elements besides the way they are laid out on the page, and that is their size. Inline elements take up only as much space as their contents. Think of the way a plastic shopping bag collapses or expands based on what you put inside. Specifying a height or width for an inline element will have no effect. Block elements, as we have already seen, take up the width of the container by default. You can set height and width for a block element but even if the width is less than the container, the element that comes after it will still be forced to a new line.</p>
+        
+        <p>The behaviour of inline and block elements can be changed from their default simply by setting the element’s <code>display</code> property to <code>inline</code> or <code>block</code>. There is a third display option that is a hybrid of inline and block and it is called, quite appropriately, <code>inline-block</code>. With inline-block, an element will position itself side-by-side with adjacent elements but it will respect a height or width property.</p>
+        
+        <p>In summary, the three display options differ with regard to two things: how they handle an element’s positioning relative to adjacent elements, and whether they allow an element’s size to be set. This handy table will hopefully help you to remember the differences.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Positioning</th>
+              <th>Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>inline</td>
+              <td>Adjacent to neighbouring elements until the width of the container is filled, then wraps to a new line</td>
+              <td>Based on size of contents, cannot be set</td>
+            </tr>
+            <tr>
+              <td>inline&#8209;block</td>
+              <td>Adjacent to neighbouring elements until the width of the container is filled, then wraps to a new line</td>
+              <td>Can be set</td>
+            </tr>
+            <tr>
+              <td>block</td>
+              <td>Starts on a new line, and the following element is forced to a new line as well</td>
+              <td>Can be set</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
