@@ -1,54 +1,18 @@
 /* Phone 0-599 px */
-@media screen and (max-width: 599px) {
-  html {
-    font-size: 8pt;
-  }
-  
-  #blog-header {
-    padding: 1rem;
-  }
-
-  .post {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
-/* Tablet 600-904 px and 905-1239 px */
-@media screen and (min-width: 600px) and (max-width: 1239px) {
-  html {
-    font-size: 10pt;
-  }
-
-  #blog-header {
-    padding: 1.4rem;
-  }
-
-  .post  {
-    max-width: 40rem;
-    padding: 2rem;
-  }
-}
-
-/* Laptop and desktop 1240+ px*/
-@media screen and (min-width: 1240px) {
-  html {
-    font-size: 12pt;
-  }
-
-  #blog-header {
-    padding: 1.4rem;
-  }
-
-  .post {
-    max-width: 40rem;
-    padding: 2.8rem;
-  }
-}
-
+/* Default styling */
 html {
+  font-size: 12pt;
   min-height: 100%;
   background: linear-gradient(#d9e4f5,#f5e3e6);
+}
+
+#blog-header {
+  padding: 1rem;
+}
+
+.post {
+  width: 100%;
+  padding: 1rem;
 }
 
 #blog-title {
@@ -93,7 +57,7 @@ a:hover {
 
 .post-date {
   font-family: 'Noto Sans';
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.4rem;
   text-transform: uppercase;
@@ -104,7 +68,8 @@ a:hover {
   font-family: 'Noto Sans';
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 2.8rem;
+  line-height: 1.8rem;
+  margin: 1rem auto 2rem auto;
 }
 
 .post-body {
@@ -132,4 +97,28 @@ a:hover {
   border: 1px solid grey;
   padding: 0.5rem;
   line-height: 1rem;
+}
+
+/* Tablet 600-904 px and 905-1239 px */
+@media screen and (min-width: 600px) and (max-width: 1239px) {
+  #blog-header {
+    padding: 1.4rem;
+  }
+
+  .post  {
+    max-width: 40rem;
+    padding: 2rem;
+  }
+}
+
+/* Laptop and desktop 1240+ px*/
+@media screen and (min-width: 1240px) {
+  #blog-header {
+    padding: 1.4rem;
+  }
+
+  .post {
+    max-width: 40rem;
+    padding: 2.8rem;
+  }
 }
