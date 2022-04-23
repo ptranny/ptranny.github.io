@@ -8,13 +8,13 @@
     padding: 1rem;
   }
 
-  .post  {
+  .post {
     width: 100%;
     padding: 1rem;
   }
 }
 
-/* Tablet 600-904 dp and 905-1239 px */
+/* Tablet 600-904 px and 905-1239 px */
 @media screen and (min-width: 600px) and (max-width: 1239px) {
   html {
     font-size: 10pt;
@@ -63,7 +63,7 @@ html {
 
 #blog-description {
   font-family: 'Noto Serif';
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-style: italic;
   line-height: 2.8rem;
   text-align: center;
